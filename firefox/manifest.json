@@ -4,6 +4,13 @@
   "version": "1.0.0",
   "description": "Rickrolls you when you try to use AI",
   "permissions": ["webNavigation", "tabs"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
   "host_permissions": [
     "*://*.openai.com/*",
     "*://*.chatgpt.com/*",
@@ -20,7 +27,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "ai-redirector@example.local",
+      "id": "{fbe9ecaa-1def-45a6-acfd-91ef524f2be8}",
       "strict_min_version": "109.0"
     }
   }

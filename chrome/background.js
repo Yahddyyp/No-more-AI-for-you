@@ -4,7 +4,6 @@ const api = typeof browser !== "undefined" ? browser : chrome;
 const DEFAULT_VIDEO = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
 // Map specific hostnames -> specific videos, if you want variety.
-// Leave a site out (or set it to DEFAULT_VIDEO) to just rickroll it.
 const SITE_VIDEO_MAP = {
   "chat.openai.com": DEFAULT_VIDEO,
   "chatgpt.com": DEFAULT_VIDEO,
@@ -18,7 +17,7 @@ const SITE_VIDEO_MAP = {
   "kimi.ai": DEFAULT_VIDEO,
 };
 
-// Hostnames we watch for (derived from the map above, plus bare-domain matching
+// Hostnames to watch for (derived from the map above, plus bare-domain matching
 // so subdomains like "www.chatgpt.com" or "beta.perplexity.ai" also match).
 const WATCHED_HOSTS = Object.keys(SITE_VIDEO_MAP);
 
