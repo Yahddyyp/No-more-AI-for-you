@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "No more AI for you",
+  "version": "1.0.0",
+  "description": "Rickrolls you when you try to use AI",
+  "permissions": ["webNavigation", "tabs"],
+  "host_permissions": [
+    "*://*.openai.com/*",
+    "*://*.chatgpt.com/*",
+    "*://*.perplexity.ai/*",
+    "*://*.claude.ai/*",
+    "*://gemini.google.com/*",
+    "*://copilot.microsoft.com/*",
+    "*://kimi.com/*",
+    "*://kimi.moonshot.cn/*",
+    "*://kimi.ai/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ai-redirector@example.local",
+      "strict_min_version": "109.0"
+    }
+  }
+}
