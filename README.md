@@ -29,6 +29,9 @@ over the other if you make changes.
 
 ## Load it in Firefox
 
+Use firefox addons [here](https://addons.mozilla.org/en-US/firefox/addon/no-more-ai-for-you/)
+
+### Load from source 
 1. Go to `about:debugging#/runtime/this-firefox`
 2. Click **Load Temporary Add-on…**
 3. Select `firefox/manifest.json`
